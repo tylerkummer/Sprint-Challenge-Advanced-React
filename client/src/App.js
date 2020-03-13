@@ -36,8 +36,8 @@ class App extends React.Component {
   }
 
   handleFormSubmit = () => {
-    localStorage.setItem('rememberPlayer', this.setState);
-    localStorage.setItem('player', this.setState ? this.state.value : '');
+    useLocalStorage.setItem('rememberPlayer', this.setState);
+    useLocalStorage.setItem('player', this.setState ? this.state.value : '');
   }
 
   render(){
