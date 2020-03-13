@@ -1,0 +1,20 @@
+.cardStyle {
+    width: 15%;
+    margin: 15px auto;
+}
+
+.bodyStyle {
+    background-color: gray;
+}
+
+.titleStyle {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtitleStyle{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
