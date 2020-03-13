@@ -9,8 +9,11 @@ test("renders Players without crashing", () => {
     render(<Players value={value}/>);
 });
 
-test("checks for card", async() => {
-    const { getByLabelText, getByTestId, findByText } = render(<Players value={value} />);
+// test("checks for card", async() => {
+//     const { getByLabelText, getByTestId, findByText } = render(<Players value={value} />);
 
-    
-});
+//     await findByText(/cardStyle/);
+//     await findByText(/bodyStyle/);
+//     await findByText(/titleStyle/);
+//     await findByText(/subtitleStyle/);
+// });
