@@ -9,11 +9,11 @@ test("renders Players without crashing", () => {
     render(<Players value={value}/>);
 });
 
-// test("checks for card", async() => {
-//     const { getByLabelText, getByTestId, findByText } = render(<Players value={value} />);
+test("checks for card", async() => {
+    const { getByTestId, getAllByText } = render(<Players value={value} />);
 
-//     await findByText(/cardStyle/);
-//     await findByText(/bodyStyle/);
-//     await findByText(/titleStyle/);
-//     await findByText(/subtitleStyle/);
-// });
+    await getByTestId('0');
+    await getByTestId('Alex Morgan');
+    await getAllByText(/United States/i);
+    await getAllByText(/100/i);
+});
