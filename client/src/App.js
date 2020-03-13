@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import Players from "./components/Players";
+import { useLocalStorage } from './components/useLocalStorage';
 
 // function App() {
 //   const [value, setValue] = useState([]);
@@ -32,6 +33,11 @@ class App extends React.Component {
       })
     })
     .catch(error => console.log(error.message))
+  }
+
+  handleFormSubmit = () => {
+    localStorage.setItem('rememberPlayer', this.setState);
+    localStorage.setItem('player', this.setState ? this.state.value : '');
   }
 
   render(){
